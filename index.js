@@ -5,6 +5,9 @@ var chalk = require('chalk');
 var lockme = require('lockme');
 var promptly = require('promptly');
 
+/*
+    File-type: .moleskine
+*/
 
 function Moleskine() {
     this.logPath = path.join(process.cwd(), '.moleskine');
@@ -13,11 +16,6 @@ function Moleskine() {
 }
 
 Moleskine.prototype = Object.create(lockme.prototype);
-
-/*
-    File-type: .moleskine
-*/
-
 
 Moleskine.prototype.createFile = function createFile(text, cb) {
     // Choice prompt

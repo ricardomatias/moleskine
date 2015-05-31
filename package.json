@@ -1,31 +1,32 @@
 {
-  "name": "captains-log",
+  "name": "moleskine",
   "version": "0.0.1",
-  "description": "Write notes as you develop",
+  "description": "Write notes as you develop with or without encryption (CLI)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "engines": {
     "node": ">=0.12"
   },
   "bin": {
-    "moleskine": "cli.js"
+    "moleskine": "moleskine.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ricardomatias/captains-log"
+    "url": "https://github.com/ricardomatias/moleskine"
   },
   "keywords": [
-    "captain's",
-    "log"
+    "moleskine",
+    "log",
+    "notes"
   ],
   "author": "Ricardo Matias <ricardo.matias0@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ricardomatias/captains-log/issues"
+    "url": "https://github.com/ricardomatias/moleskine/issues"
   },
-  "homepage": "https://github.com/ricardomatias/captains-log",
+  "homepage": "https://github.com/ricardomatias/moleskine",
   "dependencies": {
     "chalk": "^1.0.0",
     "commander": "^2.8.1",

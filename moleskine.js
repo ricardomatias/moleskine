@@ -1,4 +1,4 @@
-'use strict';
+#!/usr/bin/env node
 
 var fs = require('fs');
 var program = require('commander');
@@ -11,13 +11,13 @@ var mlsk = new Moleskine();
 
 // Command-Line Setup
 program
-    .version('0.0.1')
-    .usage('<flags> <text>');
+    .version('1.0.0')
+    .usage('<command> <flags>');
 
 program
     .command('open')
     .alias('o')
-    .description('Print the file')
+    .description('Print the file [ -s, --secret <password> ]')
     .option('-s, --secret <password>')
     .action(open);
 
@@ -26,6 +26,17 @@ program
     .alias('w')
     .description('The text you want to write to the Moleskine\'s log')
     .action(write);
+
+program.on('--help', function(){
+    console.log('  Commands:');
+    console.log('');
+    console.log('    $ moleskine w hello world');
+    console.log('    $ Saved to .moleskine');
+    console.log('');
+    console.log('    $ moleskine o --secret 2d2as');
+    console.log('    $ hello world');
+    console.log('');
+});
 
 program.parse(process.argv);
 

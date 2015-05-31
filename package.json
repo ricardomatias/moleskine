@@ -1,0 +1,39 @@
+{
+  "name": "captains-log",
+  "version": "0.0.1",
+  "description": "Write notes as you develop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=0.12"
+  },
+  "bin": {
+    "moleskine": "cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ricardomatias/captains-log"
+  },
+  "keywords": [
+    "captain's",
+    "log"
+  ],
+  "author": "Ricardo Matias <ricardo.matias0@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ricardomatias/captains-log/issues"
+  },
+  "homepage": "https://github.com/ricardomatias/captains-log",
+  "dependencies": {
+    "chalk": "^1.0.0",
+    "commander": "^2.8.1",
+    "lockme": "^1.1.0",
+    "promptly": "^0.2.1"
+  },
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "mocha": "^2.2.5"
+  }
+}

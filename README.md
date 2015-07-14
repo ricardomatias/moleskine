@@ -14,7 +14,7 @@ npm install -g moleskine
 
 ```cli
 moleskine w refactor edit diagram feature
-Create .captains-log with encryption ? (y/n)
+Create .moleskine with encryption ? (y/n)
 > y
 Write the secret you want to encrypt with:
 (Text Input hidden)

@@ -20,7 +20,7 @@ Moleskine.prototype = Object.create(lockme.prototype);
 Moleskine.prototype.createFile = function createFile(text, cb) {
     // Choice prompt
     var choice = [
-        chalk.bold.green('Create .captains-log with encryption ? (y/n)'),
+        chalk.bold.green('Create .moleskine with encryption ? (y/n)'),
         chalk.blue('>')
     ].join('\n');
 

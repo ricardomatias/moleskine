@@ -1,6 +1,6 @@
 {
   "name": "moleskine",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Write notes as you develop with or without encryption (CLI)",
   "main": "index.js",
   "scripts": {
